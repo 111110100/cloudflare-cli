@@ -1,0 +1,28 @@
+Screen {
+    background: $background;
+    color: $foreground;
+}
+Header {
+    background: $primary;
+    color: $background;
+}
+#results-scroll {
+    height: 1fr;
+    padding: 1;
+    background: $background;
+    color: $foreground;
+}
+Input {
+    dock: bottom;
+    margin: 1;
+    background: $background;
+    color: $foreground;
+    border: double $primary;
+}
+Input:focus {
+    border: double $secondary;
+}
+Footer {
+    background: $background;
+    color: $foreground;
+}
