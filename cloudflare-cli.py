@@ -290,9 +290,9 @@ class CloudflareWorkspace(App):
             self.update_zone_status_widgets()
 
         except httpx.HTTPStatusError as e:
-            self.results_widget.update(f"[bold red]❌ Bootstrap Failed: API Error {e.response.status_code}[/bold red]")
+            self.results_widget.update(f"[bold red]Bootstrap Failed: API Error {e.response.status_code}[/bold red]")
         except Exception as e:
-            self.results_widget.update(f"[bold red]❌ Bootstrap Failed: {str(e)}[/bold red]")
+            self.results_widget.update(f"[bold red]Bootstrap Failed: {str(e)}[/bold red]")
 
     async def select_zone(self, zone_name: str) -> None:
         """Selects a configured zone by its fetched website name and refreshes its settings."""
